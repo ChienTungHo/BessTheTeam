@@ -2,6 +2,8 @@
 	border-bottom: solid 3px #dd4814;
 	box-shadow:  inset 0px -3px 0px 0px #fff;
 	padding: 40px 0 40px 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #banner .head-div{

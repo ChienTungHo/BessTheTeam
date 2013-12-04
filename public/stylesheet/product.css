@@ -8,6 +8,8 @@
 	background-color: #fff;
 	border-bottom: solid 3px #fff;
 	box-shadow:  inset 0px 3px 0px 0px #dd4814;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .product-section{
@@ -61,6 +63,8 @@
 	background-color:  #505050;
 	border-top: solid 5px #ffffff;
 	padding: 80px 0 80px 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #footer .title{
@@ -89,6 +93,8 @@
 	padding: 60px 0 60px 0;
 	background-color: #dddddd;
 	border-top: solid 5px #ffffff;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #partner .partner-title{
