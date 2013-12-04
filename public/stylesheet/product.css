@@ -5,6 +5,7 @@
 }
 
 #product{
+	background-color: #fff;
 	border-bottom: solid 3px #fff;
 	box-shadow:  inset 0px 3px 0px 0px #dd4814;
 }
@@ -15,8 +16,7 @@
 }
 
 .product-section-last{
-	padding: 60px 0 40px 0;
-	border-bottom: solid 1px #A8A8A8;	
+	padding: 60px 0 40px 0;	
 }
 
 .product-section .product-title,
@@ -61,7 +61,6 @@
 	background-color:  #505050;
 	border-top: solid 5px #ffffff;
 	padding: 80px 0 80px 0;
-	margin-top: 30px;
 }
 
 #footer .title{
@@ -87,7 +86,9 @@
 }
 
 #partner{
-	padding: 60px 0 80px 0;
+	padding: 60px 0 60px 0;
+	background-color: #dddddd;
+	border-top: solid 5px #ffffff;
 }
 
 #partner .partner-title{
@@ -97,3 +98,15 @@
 	padding-bottom: 20px;
 	text-align: center;
 }
+
+#partner .partner-block{
+	padding: 15px;
+}
+
+#partner .partner-image{
+	width: 100%;
+	height: auto;
+	background-color: #eeeeee;
+}
+
+

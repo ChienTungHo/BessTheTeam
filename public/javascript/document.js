@@ -8,4 +8,12 @@ $(document).ready(function(){
             window.location.hash = target;
         });
     });
+
+    var $modal = $('#myModal').modal({
+    	show: false
+	});
+
+	$('.panel').on('click', function() {
+    	$modal.modal('show');
+	});
 });
