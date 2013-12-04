@@ -1,0 +1,99 @@
+.navbar{
+	border-bottom: solid 2px #dd4814;
+	box-shadow: inset 0px -1px 0px 0px #fff, 
+	            inset 0px -2px 0px 0px #e5e5e5;
+}
+
+#product{
+	border-bottom: solid 3px #fff;
+	box-shadow:  inset 0px 3px 0px 0px #dd4814;
+}
+
+.product-section{
+	padding: 60px 0 40px 0;
+	border-bottom: dotted 1px #C0C0C0;
+}
+
+.product-section-last{
+	padding: 60px 0 40px 0;
+	border-bottom: solid 1px #A8A8A8;	
+}
+
+.product-section .product-title,
+.product-section-last .product-title{
+	font-weight: 700;
+	color: #bf3e11;
+	text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.product-section .panel{
+	-moz-box-shadow:    0 3px 3px 0 #ccc;
+ 	-webkit-box-shadow: 0 3px 3px 0 #ccc;
+ 	box-shadow:         0 3px 3px 0 #ccc;
+}
+
+.product-section .panel-default:hover,
+.product-section-last .panel-default:hover{
+	border-color: #ff6600;
+	cursor: pointer;
+}
+
+#YoungMax .product-image,
+#TowerFan .product-image,
+#TranTex .product-image{
+	width: 100%;
+	height: auto;
+}
+
+#YoungMax .product-name,
+#TowerFan .product-name,
+#TranTex .product-name{
+	font-size: 14px;
+	font-weight: bold;
+	color: #303030;
+	text-align: center;
+}
+
+
+#footer{
+	background-color:  #505050;
+	border-top: solid 5px #ffffff;
+	padding: 80px 0 80px 0;
+	margin-top: 30px;
+}
+
+#footer .title{
+	text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
+	text-align: center;
+	color: #C1C1C1;
+}
+
+#footer .mail{
+	margin-top: 20px;
+	font-size: 26px;
+	color: #ffffff;
+	text-align: center;
+	padding-bottom: 40px;
+	border-bottom: solid 1px #A8A8A8;
+}
+
+#footer .right-reserve{
+	padding-top: 30px;
+	font-size: 10px;
+	color: #D0D0D0;
+	text-align: center;
+}
+
+#partner{
+	padding: 60px 0 80px 0;
+}
+
+#partner .partner-title{
+	font-weight: 700;
+	color: #505050;
+	text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
+	padding-bottom: 20px;
+	text-align: center;
+}

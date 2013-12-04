@@ -1,8 +1,29 @@
+#banner{
+	border-bottom: solid 3px #dd4814;
+	box-shadow:  inset 0px -3px 0px 0px #fff;
+	padding: 40px 0 40px 0;
+}
+
 #banner .head-div{
-  margin-right: -60px;
+	margin-right: -60px;
 }
 
 #banner .head-logo{
 	width: 100%;
 	height: auto;
+}
+
+#banner .recommend .logo{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#banner .recommend{
+	padding: 40px 60px 0 60px;
+}
+
+#banner .recommend .title{
+	text-align: center;
+	font-weight: bold;
 }
