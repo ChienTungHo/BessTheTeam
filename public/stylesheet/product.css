@@ -5,35 +5,57 @@
 }
 
 #product{
-	background-color: #fff;
 	border-bottom: solid 3px #fff;
-	box-shadow:  inset 0px 3px 0px 0px #dd4814;
-	margin-left: auto;
-	margin-right: auto;
+	#-webkit-box-shadow: inset 0 8px 12px 0 #e87511;
+	#-moz-box-shadow: inset 0 8px 12px 0 #e87511;
+	#box-shadow: inset 0 8px 12px 0 #e87511;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	background-image: url('../image/wood.jpg');
+	background-repeat: repeat;
+
 }
 
 .product-section{
-	padding: 60px 0 40px 0;
-	border-bottom: dotted 1px #C0C0C0;
+	padding: 20px 0;
 }
 
-.product-section-last{
-	padding: 60px 0 40px 0;	
+.first-section{
+	margin-top: -90px;
 }
 
-.product-section .product-title,
-.product-section-last .product-title{
-	font-weight: 700;
-	color: #bf3e11;
-	text-shadow: 0.05em 0.075em 0 rgba(0,0,0,0.1);
-	padding-bottom: 20px;
+.product-section .product-group{
+	margin: 50px 0; 
+}
+
+.product-section .product-title{
+	color: #ffffff;
+	text-shadow: 2px 2px 2px #bf3e11;
 	text-align: center;
+	overflow: hidden;
+  	position: relative;
+  	padding: 30px 0; 
+}
+
+.product-section .product-title:before, 
+.product-section .product-title:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 2px;
+    content: '\a0';
+    background-color: #ffffff;
+}
+.product-section .product-title:before {
+    margin-left: -50%;
+    text-align: right;
 }
 
 .product-section .panel{
-	-moz-box-shadow:    0 3px 3px 0 #ccc;
- 	-webkit-box-shadow: 0 3px 3px 0 #ccc;
- 	box-shadow:         0 3px 3px 0 #ccc;
+	-moz-box-shadow:    0 2px 6px 0 #083f6f;
+ 	-webkit-box-shadow: 0 2px 6px 0 #083f6f;
+ 	box-shadow:         0 2px 6px 0 #083f6f;
 }
 
 .product-section .panel-default:hover,
@@ -42,27 +64,45 @@
 	cursor: pointer;
 }
 
-#YoungMax .product-image,
-#TowerFan .product-image,
-#TranTex .product-image{
-	width: 100%;
-	height: auto;
-}
-
-#YoungMax .product-name,
-#TowerFan .product-name,
-#TranTex .product-name{
-	font-size: 14px;
-	font-weight: bold;
-	color: #303030;
+.product-section .product-content{
+	background-color: #fff;
 	text-align: center;
 }
 
+#product .product-image{
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius-bottom-left :6px;
+	-webkit-border-radius-bottom-right :6px;
+  	-moz-border-radius-bottom-left: 6px;
+  	-moz-border-radius-bottom-right: 6px;
+  	border-radius-bottom-left: 6px;
+  	border-radius-bottom-right: 6px;
+}
+
+#product .product-name{
+	font-size: 10px;
+	color: #bf3e11;
+}
+
+#product .zoom-glass{
+	width: 20px;
+	height: 20px;
+}
 
 #footer{
-	background-color:  #505050;
-	border-top: solid 5px #ffffff;
-	padding: 80px 0 80px 0;
+	background: #dd4814; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkNDgxNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZjNlMTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #dd4814 0%, #bf3e11 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dd4814), color-stop(100%,#bf3e11)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #dd4814 0%,#bf3e11 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #dd4814 0%,#bf3e11 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #dd4814 0%,#bf3e11 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #dd4814 0%,#bf3e11 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd4814', endColorstr='#bf3e11',GradientType=0 ); /* IE6-8 */
+
+	padding: 40px 0 40px 0;
 	margin-left: auto;
 	margin-right: auto;
 }

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bess & the Team</title>
+  <title>SPARKLY</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="stylesheet/bootstrap.css" media="screen">
@@ -20,8 +21,30 @@
   <link rel="stylesheet" href="stylesheet/page-header.css">
   <link rel="stylesheet" type="text/css" href="stylesheet/product.css">
 
+  <!-- This is backbone js file -->
+  <script type="text/javascript" src="javascript/underscore-min.js"></script>
+  <script type="text/javascript" src="javascript/backbone-min.js"></script>
+  
   <!-- This is customized javascript file -->
   <script type="text/javascript" src="javascript/document.js "></script>
+
+  <!-- This is fancybos javascript and css file -->
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
 </head>
 
 <body id="top">
@@ -30,7 +53,7 @@
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     	<div class="container">
     		<div class="navbar-header">
-    			<a href="#top" class="navbar-brand">Bess & the Team</a>
+    			<a href="#top" class="navbar-brand">SPARKLY</a>
               <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -40,16 +63,15 @@
     		<div class="navbar-collapse collapse" id="navbar-main" style="height: 1px;">
       		<ul class="nav navbar-nav">	
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="store"><span class="glyphicon glyphicon-shopping-cart"></span> Products in the Store <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="store"><span class="glyphicon glyphicon-shopping-cart"></span> hardware fittings <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="store">
-                <li><a tabindex="-1" href="#YoungMax">YOUNGMAX</a></li>
-                <li><a tabindex="-1" href="#TowerFan">TOWERFAN</a></li>
-                <li><a tabindex="-1" href="#TranTex">TRANTEX</a></li>
+                <li><a tabindex="-1" href="#DOG">DOG</a></li>
+                <li><a tabindex="-1" href="#HORSE">HORSE</a></li>
               </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-    				  <li><a href="#partner"><span class="glyphicon glyphicon-thumbs-up"></span> Where to Buy ?</a></li>
+    				  <li><a href="mailto:sales@sparkly-metal.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;sales@sparkly-metal.com</a></li>
     			</ul>
     		</div>
     	</div>
@@ -62,33 +84,35 @@
     <div class="container">
     	<div class="row">
     		<div class="col-md-12 col-xs-12">
+          <div class="col-md-1"></div>
           <div class="col-md-2">
             <div class="row head-div">
     				  <img class="head-logo" src="image/steve-jobs-yellow.jpg"></img>
             </div>
     			</div>
-    			<div class="col-md-10">
+    			<div class="col-md-8">
             <h1>Hi Steve!</h1>
-            <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
           </div>
+          <div class="col-md-1"></div>
     		</div>
     	</div>
 
       <div class="row">
         <div class="col-md-4 col-xs-12 recommend">
-          <img class="img-circlr logo" src="image/banner-circle.png"/>
+          <img class="img-circle logo" src="image/banner-circle.png"/>
           <h4 class="title">Why to buy?</h4>
-          <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+          <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
         </div>
         <div class="col-md-4 col-xs-12 recommend">
-          <img class="img-circlr logo" src="image/banner-circle.png"/>
+          <img class="img-circle logo" src="image/banner-circle.png"/>
           <h4 class="title">How to buy?</h4>
-          <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+          <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
         </div>
         <div class="col-md-4 col-xs-12 recommend">
-          <img class="img-circlr logo" src="image/banner-circle.png"/>
+          <img class="img-circle logo" src="image/banner-circle.png"/>
           <h4 class="title">When to buy?</h4>
-          <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+          <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
         </div>
       </div>
     </div>
@@ -98,256 +122,26 @@
   <!-- this is product -->
   <div id="product">
     <div class="container">
-      <div class="row product-section" id="YoungMax">
-        <h2 class="product-title">YoungMax</h2>
-        <div class="row">
-          <!-- Start of product well -->
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
 
-            <!-- this is modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Can Rack</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div>
-                      <img class="product-image" src="image/can_rack.png"></img>
-                    </div>
-                    <h4>Description:</h4>
-                    <div>
-                      <ul>
-                        <li>SPCC 0.5t cabinet body</li>
-                        <li>SUS430 0.5t Doors with handles</li>
-                        <li>3pcs high adjustable middle shelves</li>
-                        <li>4pcs Leveling feet</li>
-                        <li>Max-Loading capacity 590 kg</li>
-                      </ul>
-                    </div>
-                    <h4>Spec.:</h4>
-                    <div>
-                      <ul>
-                        <li>Item No : 13201</li>
-                        <li>Product Size : 1219.2*457.2*1828.8mm</li>
-                        <li>Inner Packing : 1pc/Color Box</li>
-                        <li>N.W : 64.5KG</li>
-                        <li>G.W : 67.2KG</li>
-                        <li>CUFT : 13.65</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Next</button>
-                  </div>
-                </div><!-- /.modal-content -->
-              </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
-            <!-- This is end of modal --> 
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-          <!-- End of product well -->
-        </div>
+      <!-- This is dog product -->
+      <div class="row product-section first-section" id="DOG">
+        <h2 class="product-title">&nbsp;&nbsp;DOG&nbsp;&nbsp;</h2>
+        <div id="DogView"></div>
       </div>
-      <div class="row product-section" id="TowerFan">
-        <div class="col-md-12">
-          <h2 class="product-title">TowerFan</h2>
-        </div>
-        <div class="row">
-          <!-- Start of product well -->
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
+      <!-- End of dog product -->
 
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-          <!-- End of product well -->
-        </div>
+      <!-- This is horse product -->
+      <div class="row product-section first-section" id="DOG">
+        <h2 class="product-title">&nbsp;&nbsp;HORSE&nbsp;&nbsp;</h2>
+        <div id="HorseView"></div>
       </div>
-      <div class="row product-section-last" id="TranTex">
-        <div class="col-md-12">
-          <h2 class="product-title">TranTex</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
+      <!-- End of horse product -->
 
-          <div class="col-md-3 col-xs-12">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div>
-                  <img class="product-image" src="image/can_rack.png"></img>
-                </div>
-              </div>
-              <div class="panel-footer">
-                <div class="product-name">Cran Rack</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <!-- end of product -->
 
-  <div id="partner">
+  <!--<div id="partner">
     <div class="container">
       <div class="row">
         <h2 class="partner-title">Where to buy?</h2>
@@ -377,21 +171,62 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <!-- this is footer -->
   <div id="footer">
     <div class="container">
       <div class="row">
-        <h1 class="title">Be a partnership? <strong>Contact us!</strong></h1>
+        <h1 class="title">Want to buy? <strong>Contact us!</strong></h1>
         <div class="col-md-12 mail">
-          <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;besslin@hotmail.com
+          <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;sales@sparkly-metal.com
         </div>
-        <div class="col-md-12 right-reserve">@BESS,LIN. ALL RIGHTS RESERVED</div>
+        <div class="col-md-12 right-reserve">@SPARKLY. ALL RIGHTS RESERVED</div>
       </div>
     </div>
   </div>
   <!-- end of footer -->
+
+
+<!-- this is product list template -->
+<script type="text/template" id="ProductTmp">
+  <div class="row product-group">
+    <% _.each(productList, function(product) { %> 
+      <div class="col-md-2 col-xs-6">
+        <a class="fancybox" rel="<%= product.sell_id  %>" title="<%= product.item_id %>" href="image/product/<%= folder%>/<%= product.item_id %>.jpg">
+          <div class="panel panel-default">
+            <div class='panel-heading'>
+              <div class="product-name"><%= product.item_id %><image class="zoom-glass pull-right" src="image/zoom-glass.png"/></div>
+            </div>
+            <div class="panel-body">
+              <div class="product-content">
+                <img alt="<%= product.item_id%>" class="product-image image-rounded" src="image/product/<%= folder%>/<%= product.item_id%>.jpg"></img>
+              </div>
+            </div>
+          </div>
+        </a> 
+      </div>
+    <% }); %>
+  </div>
+</script>
+
+<!-- this is product group template -->
+<script type="text/template" id="ProductGroup">
+  <div class="row">
+    <% _.each(action, function(acs) { %> 
+    <a class="btn"><%= acs.label %></a>
+    <% }); %>
+  </div>
+</script>
+
+<div id="view-goes-here"></div>
+<script type="text/template" id="actions-template">
+<% _.each(action, function(acs) { %> 
+    <a class="btn"><%= acs.label %></a>
+<% }); %>
+</script>
+
 </body>
+
 
 </html>
