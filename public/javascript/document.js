@@ -1,4 +1,19 @@
 $(document).ready(function(){
+	var url=window.location.toString();
+	var str="Guys";
+	var user_value="";
+	if(url.indexOf("?")!=-1){
+	    var ary=url.split("?")[1].split("&");
+	    for(var i in ary){
+	        str=ary[i].split("=")[0];
+	        if (str == "uname") {
+	            user_value = decodeURI(ary[i].split("=")[1]);
+	            break;
+	        }
+	    }
+	}
+	$('#user').html('Hi, ' + user_value + ' !');
+
     $('a[href^="#"]').click(function(e) {
         e.preventDefault();
         var Target = this.hash, $Target = $(Target);
@@ -37,7 +52,6 @@ $(document).ready(function(){
     		$(dv).append(this.el);
 		},
 		addView: function(product){
-			console.log(product);
 			var productView = new ProductView({model: product});
 			this.$el.append(productView.render(this.folder).el);
 		}
@@ -49,7 +63,24 @@ $(document).ready(function(){
 		
 		var productCollectionView = new ProductCollectionView({collection: productCollection});
 		productCollectionView.render('#DogView','dog');
-		
+	
+		$("a.fancybox").click(function(){	
+			this.sell_id = $(this).attr("rel");
+			this.item_id = $(this).attr("title");
+			var clickurl = "/click/add/" + this.item_id + '/' + this.sell_id + '/' + user_value;
+			var adduserurl = "/user/add/" + user_value;
+			$.get(
+				clickurl,
+				{},
+				function(data){}
+			);
+			$.get(
+				adduserurl,
+				{},
+				function(data){}
+			);
+		});
+
 	});
 
 	$.getJSON("json/horse.json", function(json) {
@@ -58,6 +89,25 @@ $(document).ready(function(){
 		
 		var productCollectionView = new ProductCollectionView({collection: productCollection});
 		productCollectionView.render('#HorseView','horse');
+
+		$("a.fancybox").click(function(){	
+			this.sell_id = $(this).attr("rel");
+			this.item_id = $(this).attr("title");
+			var clickurl = "/click/add/" + this.item_id + '/' + this.sell_id + '/' + user_value;
+			var adduserurl = "/user/add/" + user_value;
+			$.get(
+				clickurl,
+				{},
+				function(data){}
+			);
+			$.get(
+				adduserurl,
+				{},
+				function(data){}
+			);
+		});
 		
 	});
+
+	
 });
