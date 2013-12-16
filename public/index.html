@@ -91,7 +91,7 @@
             </div>
     			</div>
     			<div class="col-md-8">
-            <h1>Hi Steve!</h1>
+            <h1 id="user"></h1>
             <p>Welcome to the Bess & the team market. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
           </div>
           <div class="col-md-1"></div>
@@ -131,7 +131,7 @@
       <!-- End of dog product -->
 
       <!-- This is horse product -->
-      <div class="row product-section first-section" id="DOG">
+      <div class="row product-section first-section" id="HORSE">
         <h2 class="product-title">&nbsp;&nbsp;HORSE&nbsp;&nbsp;</h2>
         <div id="HorseView"></div>
       </div>
@@ -208,22 +208,6 @@
       </div>
     <% }); %>
   </div>
-</script>
-
-<!-- this is product group template -->
-<script type="text/template" id="ProductGroup">
-  <div class="row">
-    <% _.each(action, function(acs) { %> 
-    <a class="btn"><%= acs.label %></a>
-    <% }); %>
-  </div>
-</script>
-
-<div id="view-goes-here"></div>
-<script type="text/template" id="actions-template">
-<% _.each(action, function(acs) { %> 
-    <a class="btn"><%= acs.label %></a>
-<% }); %>
 </script>
 
 </body>

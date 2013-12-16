@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sparkly Statistic</title>
+
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  	<!-- Optional theme -->
+	<link rel="stylesheet" href="stylesheet/bootstrap.css" media="screen">
+	<!-- This is bootstrap stylesheet -->
+	<link rel="stylesheet" href="stylesheet/bootswatch.min.css">
+	<!-- This is bootstrap javascript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+	<!-- This is icon for bootstrap -->
+	<link rel="stylesheet" href="fonts/font-awesome.min.css">
+
+	<!-- Customer Library -->
+	<script type="text/javascript" src="javascript/statistic.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#Total" data-toggle="tab">Total</a></li>
+			<li><a href="#Personal" data-toggle="tab">Personal</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" id="Total">
+		 		<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>item_id</th>
+							<th>sell_id</th>
+							<th>count</th>
+						</tr>
+					</thead>
+					<tbody id="item_record"></tbody>
+				</table>
+			</div>
+			<div class="tab-pane" id="Personal">
+		  		<select id="user">
+		  			<option value="" selected="selected">Please Choose:</option>
+		  		</select>
+		  		<br><br>
+		  		<div>
+			  		<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>user</th>
+								<th>item_id</th>
+								<th>sell_id</th>
+								<th>time</th>
+							</tr>
+						</thead>
+						<tbody id="user_record"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
